@@ -6,7 +6,7 @@ const User = require("../models/User");
 const authMiddleware = require("../middleware/authMiddleware");
 
 const router = express.Router();
-console.log("auth.js routes loaded");
+
 
 router.post("/register", async (req, res) => {
   const { userName, email, password } = req.body;
